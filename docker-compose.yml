@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ui_garden:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Ibragimov_Shawn_coding_assignment12
+    ports:
+      - "8083:80"
+    working_dir: /usr/share/nginx/html
